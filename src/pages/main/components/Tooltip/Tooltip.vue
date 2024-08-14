@@ -46,7 +46,7 @@ const clearTooltipData = () => {
 
 /** Скрыть тултип при клике вне его */
 function hideTooltip (e: Event) {
-  if (!document.querySelector('.tooltip') || e.target.closest('.item')) return
+  if (!document.querySelector('.tooltip') || e.target.closest('.available-items .item')) return
 
   const isClickOutsideTooltip = !e.target.closest('.tooltip')
 
